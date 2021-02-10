@@ -1,0 +1,80 @@
+.icons__container{
+    margin-right: 3rem;
+    margin-top: 13rem;
+   
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    
+ grid-template-columns: repeat( 5, 12rem );
+ grid-gap: 15rem;
+
+
+    &--icons{
+        
+        
+    }
+
+     @include respond(tab-land) { // width < 1200px
+        
+      grid-gap: 7rem;
+     }
+
+       @include respond(tab-port) { // width < 900px
+       
+        grid-gap: 0rem;
+        grid-template-columns: 10rem; 
+    
+     }
+
+ animation: bottom-to-top 1.2s ease-in-out;
+
+    &--svg{
+        display: flex;
+        margin-top: 8rem;
+        width: 13rem;
+        filter:    brightness(186%) saturate(200%) hue-rotate(360deg) grayscale(100%); filter: brightness(186%) saturate(200%) hue-rotate(360deg) grayscale(100%);
+        transition: all .3s;
+        cursor: pointer;
+
+        @include respond(tab-port) { // width < 900px
+        margin-top: 3rem;
+        
+        
+        }
+
+        &:hover{
+            transform: scale(0.9);
+            filter:  brightness(116%) saturate(200%) hue-rotate(360deg) grayscale(84%); filter: brightness(116%) saturate(200%) hue-rotate(360deg) grayscale(84%);
+        }
+    }
+
+    .amazon{
+        width: 16rem;
+       
+        @include respond(tab-port) { // width < 900px
+        margin-left: -3rem;
+        }
+
+    }
+    
+    .cannes{
+        width: 11rem;
+        @include respond(tab-port) { // width < 900px
+        margin-left: 0rem;
+        }
+    }
+    .vine{
+        width: 9rem;
+    }
+    .flickr{
+        width: 9rem;
+    }
+
+    .github{
+         @include respond(tab-port) { // width < 900px
+        margin-left: -2rem;
+        }
+    }
+
+}

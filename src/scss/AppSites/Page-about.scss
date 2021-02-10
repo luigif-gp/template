@@ -1,0 +1,440 @@
+.page-about{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    background-color: rgb(253, 235, 245);
+    height: 95rem;
+
+    border-top-right-radius: 120px ;
+     border-bottom-left-radius: 120px ;
+
+     @include respond(tab-land) { // width < 1200px
+        height: 150rem;
+    }
+
+
+     &__header{
+         margin-top: 10rem;
+         margin-left: 10rem;
+         margin-right: 10rem;
+        margin-bottom: 40rem;
+
+         display: grid;
+         align-self: center;
+         justify-self: left;
+         
+         grid-template-areas: 
+         "a a 0 0 b"
+         "c c 0 0 b" 
+         "d d 0 0 b"
+         "e e 0 0 b";
+       
+         color: $color-5;
+
+         @include respond(tab-land) { // width < 1200px
+              text-align: center;
+              justify-content: center;
+             
+              align-self: center;
+                
+             }
+
+     }
+         
+         &__content-area{
+             width: 53rem;
+             margin-right: 15rem;
+
+            @include respond(middle-desktop-max) { // width < 1450px
+                margin-right: 0rem;
+                
+             }
+
+              @include respond(tab-land) { // width < 1200px
+              margin-top: 50rem;
+             }
+             @include respond(phone-small) { // width < 1200px
+              margin-top: 42rem ;
+              width: 38rem;
+             }
+                      
+             
+        
+        &--title{
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        &--text-1{
+             margin-bottom: 3rem;
+           
+            font-size: 1.62rem;
+
+            @include respond(small-view) { // width < 600px
+                 width: 30rem;
+                 margin-left: 4rem;
+                }
+            
+        }
+        &--text-2{
+            grid-area: d;
+            font-size: 1.62rem;
+
+            @include respond(small-view) { // width < 600px
+                 width: 30rem;
+                 margin-left: 4rem;
+            }
+            
+        }
+
+        &--btn{
+            align-self: center;
+            justify-self: center;
+            margin-top: 6rem;
+            font-size: 1.7rem;
+            padding: 2.5rem;
+            
+        }
+
+       } 
+       &__pictures{
+           display: grid;
+           grid-template-rows: 0rem 1rem;
+              margin-right: 25rem;
+
+              @include respond(tab-land) { // width < 1200px
+                
+                margin-left: -50rem;
+               
+                
+             }
+        
+        &--img-1{
+            margin-top: 6rem;
+           position: absolute;
+        
+            width: 50rem;
+            z-index: 0;
+
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+
+            @include respond(middle-desktop-max) { // width < 1450px
+                width: 40rem;
+                
+             }
+             @include respond(tab-land) { // width < 1200px
+               margin-right: 45rem;
+               margin-top: -12rem;
+                width: 45rem;
+                height: 60rem;
+             }
+
+              @include respond(phone-small) { // width < 1200px
+              width: 30rem;
+              height: 50rem;
+              margin-left: 17rem;
+              justify-content: center;
+                
+             }
+            
+        }
+       
+        
+        }
+
+     
+
+     &__workflow{
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 10rem;
+        display: grid;
+        width: 125rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(middle-desktop-max) { // width < 1450px
+                width: 100rem;
+                margin-left: 5rem;
+        }
+        @include respond(tab-land) { // width < 1200px
+                width: 90rem;
+                margin-left: 10rem; 
+        }
+
+        @include respond(tab-port) { // width < 900px
+                width: 60rem;
+                margin-left: 15rem;  
+        }
+        @include respond(phone-middle) { // width < 750px
+                width: 25rem;
+                margin-left: 20rem;     
+        }
+        @include respond(phone) { // width < 600px
+                width: 20rem;
+                margin-left: 18rem; 
+        }
+        @include respond(phone-small) { // width < 600px
+                width: 10rem;
+                margin-left: 15rem;       
+        }
+         @include respond(small-view) { // width < 600px
+                margin-left: 11rem;
+        }
+
+        &--title{
+            text-align: center;
+            color: $color-5;
+            font-size: 4rem;
+            margin-bottom: 7rem;
+        }
+
+        &--video{
+            display: grid;
+            
+            
+
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+            justify-self: center;
+
+            &-img{
+                width: 140rem;
+                z-index: 0;
+
+                @include respond(middle-desktop-max) { // width < 1450px
+                width: 100rem;
+                 }
+                 @include respond(tab-land) { // width < 1200px
+                width: 80rem;
+                 }
+                  @include respond(tab-port) { // width < 900px
+                width: 60rem;
+                 }
+                  @include respond(phone-middle) { // width < 750px
+                    width: 50rem;
+                 }
+                  @include respond(phone) { // width < 750px
+                    width: 40rem;
+                 }
+                 @include respond(phone-small) { // width < 600px
+                width: 35rem;
+                }
+                @include respond(small-view) { // width < 600px
+                width: 38rem;
+                }
+                 
+                
+            }
+
+            &-playlogo{
+              
+                width: 90%;
+                margin-top: 25rem;
+               
+                position: absolute;
+                font-size: 10rem;
+                z-index: 0;
+                
+                color: $color-black;
+                transition: transform .3s;
+
+                @include respond(middle-desktop-max) { // width < 1450px
+                    width: 70%;
+                    margin-top: 19rem;
+                    font-size: 9rem;
+                 }
+
+                @include respond(tab-land) { // width < 1200px
+                font-size: 8rem;
+                }
+
+              @include respond(tab-port) { // width < 900px
+                width: 60%;
+                margin-top: 10rem;
+                font-size: 7rem;
+             }
+              @include respond(phone-middle) { // width < 750px
+                font-size: 6rem;     
+                }
+             @include respond(phone) { // width < 600px
+                width: 60%;
+                margin-top: 7rem;
+                font-size: 5rem;
+                }
+                 @include respond(phone-small) { // width < 600px
+                    width: 68%;
+                    margin-top: 7rem;
+                    font-size: 4rem;    
+              }
+              @include respond(small-view) { // width < 600px
+                font-size: 3rem;
+                    width: 90%;
+                    margin-top: 7rem;
+                 }
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+
+        }
+
+        &--content{
+            margin-top: 5rem;
+            margin-left: 23rem;
+            margin-right: 20rem;
+            color: $color-5;
+            text-align: left;
+
+            @include respond(tab-land) { // width < 900px
+                width: 70rem;
+               
+              }
+
+             @include respond(tab-port) { // width < 900px
+                width: 60rem;
+              }
+              @include respond(phone) { // width < 750px
+                    width: 50rem;
+                 }
+              @include respond(phone-small) { // width < 600px
+                width: 35rem;
+                }
+                @include respond(small-view) { // width < 600px
+                width: 33rem;
+                }
+
+            &-title{
+                font-size: 4rem;
+               
+                
+            }
+
+            &-title-2{
+                font-size: 2rem;
+                 margin-bottom: 1rem;
+            }
+
+             &-text{
+                 font-size: 1.55rem;
+                  margin-bottom: 1rem;
+                    color: $color-3;
+                &--especial{
+                    margin-right: 3rem;
+                    padding-left: 2rem;
+                    font-style: italic;
+                    font-size: 2rem;
+                    border-left: 5px solid #d1e8ff;
+                    color: $color-3;
+                }
+
+
+            }
+        }
+     }
+   }
+
+   .img-about{
+    &-2{
+        position: absolute;
+        right: 13rem;
+        top: 15rem;
+        
+
+         width: 23rem;
+        height: 17rem;
+
+        z-index: 1;
+
+        @include respond(tab-land) { // width < 1200px
+              right: -20rem;
+              top: 30rem;
+                
+             }
+
+              @include respond(phone) { // width < 900px
+              right: -40rem;
+             }
+
+             @include respond(phone-small) { // width < 1200px
+              width: 18rem;
+              height: 14rem;
+             right: -43rem;
+                
+             }
+
+        border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+    }
+
+    &-3{
+        
+        position: absolute;
+
+        top: 38rem;
+        right: 13rem;
+
+        width: 28rem;
+        height: 18rem;
+
+         z-index: 1;
+
+         @include respond(tab-land) { // width < 1200px
+              right: -20rem;
+              top: 55rem;
+                
+             }
+
+             @include respond(phone) { // width < 900px
+              right: -40rem;
+             }
+
+             @include respond(phone-small) { // width < 1200px
+              width: 22rem;
+              height: 15rem;
+               right: -43rem;
+             }
+
+         border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+    }
+
+   }
+
+   .modal-video{
+    width: 100%;
+    height: 100%;
+       background: rgba(black, 0.85);
+       z-index: 10;
+
+       &--display{
+           position: absolute;
+           top: 12rem;
+           left: 28rem;
+       }
+
+       &--closeicon{
+           position: absolute;
+           top: 2rem;
+           left: 145rem;
+           font-size: 2.4rem;
+           transition: color .3s;
+
+           &:hover{
+               color: $color-white;
+           }
+       }
+    
+    
+   }
+
+   .line-hr{
+       margin-bottom: 10rem;
+   }

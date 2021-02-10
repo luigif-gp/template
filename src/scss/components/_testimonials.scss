@@ -1,0 +1,125 @@
+.testimonial-container{
+    margin-right: 20rem;
+    margin-left: 10rem;
+   
+    display: grid;
+ @include respond(phone-small) { // width < 750px
+      margin-left: -1rem;
+     }
+
+    @include respond(small-view) { // width < 750px
+      margin-left: -5rem;
+     }
+}
+
+.carousel{
+    margin-right: -10rem;
+    height: 50rem;
+
+    
+}
+
+.card{
+    margin-top: 5rem;
+    display: grid;
+    margin-left: 2rem;
+    color: $color-5;
+    box-shadow: 0px 8px 10px  #888888;
+    
+    
+    padding-right: -5rem;
+    padding: 3rem;
+    padding-left: 3rem;
+    width: 35rem;
+    height: 34rem;
+
+    @include respond(tab-port) { // width < 900px
+      margin-left: 17rem;
+     }
+     @include respond(phone-middle) { // width < 900px
+      margin-left: 6rem;
+     }
+
+     
+
+     
+
+    &__container{
+        display: grid;
+        
+        grid-template-columns: 7rem 0rem 1rem;
+
+        
+    &--img{
+        width: 6rem;
+    }
+
+    &--name{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+        width: 25rem;
+        font-weight: 500;
+    }
+    &--work{
+        margin-top: 4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-grey-mediam;
+    }
+}
+    &__start{
+        color: rgb(255, 188, 43);
+        font-size: 2.8rem;
+       
+    }
+    &__content{
+        padding-right: .5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: oblique;
+        color: $color-3;
+        text-align:start;
+    }
+
+}
+
+.box{
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 5rem;
+    grid-template-columns: 5rem 5rem;
+    grid-gap: 5rem;
+    padding: 1rem;
+
+     @include respond(phone-middle) { // width < 750px
+      margin-left: 13rem;
+     }
+     @include respond(small-view) { // width < 750px
+      margin-left: 15rem;
+     }
+
+&__carousel-btn{
+   
+
+    padding: 0.5rem;
+    border-radius: 50px;
+    color: $color-blue;
+    font-size: 3rem;
+
+    outline: none;
+    border: none;
+    transition: all .5s;
+
+   
+
+    &:hover{
+        background-color: $color-blue;
+        color: $color-white;
+        transform: scale(1.2);
+    }
+  
+    
+}
+}

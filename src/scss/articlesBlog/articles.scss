@@ -1,0 +1,99 @@
+.articles{
+    margin-top: 2rem;
+    margin-right: 3.7rem;
+    margin-left: 2rem;
+
+     &__else{
+         margin-right: -2rem;
+     }
+
+    &__container{
+        display: grid;
+        
+        overflow: hidden;
+        
+        margin-left: 10rem;
+        margin-right: 9.5rem;
+        margin-bottom: 10rem;
+
+        
+       
+        border-bottom: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+
+        border-top-left-radius: 120px ;
+
+         @include respond(tab-land) { // width < 1200px
+            margin-left: 0rem;
+            margin-right: 0rem;
+            height: 55rem;
+                border-bottom-right-radius: 0px;
+               
+         }
+       
+        &--img{
+        border-bottom-right-radius: 120px;
+        
+            height: 71rem;
+        max-width: 128rem;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-attachment: scroll!important;
+            margin-top: -12.3rem;
+            z-index: 0;
+            
+          
+            @include respond(tab-land) { // width < 900px
+            width: 120rem;   
+            height: 70rem;
+                
+         }
+
+           @include respond(tab-port) { // width < 900px
+            width: 85rem;
+            height: 60rem;
+         }
+         @include respond(phone-middle) { // width < 900px
+            width: 70rem;
+            height: 60rem;
+                
+         }
+          
+            
+        }
+
+        &-label{
+            
+            margin-top: 55rem;
+            background-color: $color-white;
+            display: grid;
+            grid-template-columns: 10rem;
+            width: 60rem;
+            height: 18rem;
+            
+            
+            
+             border-top-right-radius: 50px ;
+
+        &--type{
+            font-size: 1.7rem;
+            margin-top: 2rem;
+            margin-left: 3rem;
+            color: $color-4;
+             
+        }
+
+        &--text{
+            margin-left: 3rem;
+            margin-bottom: 7rem;
+            width: 55rem;
+            color: $color-5;
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+    }
+    }
+}

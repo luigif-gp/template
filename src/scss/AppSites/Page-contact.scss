@@ -1,0 +1,420 @@
+.page-contact{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+   background-color: $color-1;
+    height: 80rem;
+    border-top-right-radius: 120px ;
+     border-bottom-left-radius: 120px ;
+
+     @include respond(tab-port) { // width < 600px
+     height: 110rem;
+            
+    }
+}
+
+.contact__container{
+    margin-top: 7rem;
+    margin-left: 10rem;
+     margin-right: 10rem;
+     margin-bottom: 20rem;
+    display: grid;
+    grid-template-areas: 
+    "a a a b b b"
+    "a a a b b b"
+    "a a a b b b";
+
+    @include respond(tab-land) { // width < 1200px
+        margin-left: 3rem;
+    }
+
+    @include respond(tab-port) { // width < 1200px
+        grid-template-areas: 
+        " f c f"
+        " f c f"
+        " f d f"
+        " f d f";
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+    @include respond(phone-small) { // width < 450px
+        margin-left: -5rem;
+     }
+     @include respond(small-view) { // width < 450px
+        margin-left: -10rem;
+     }
+
+    
+     color: $color-3;
+    &--title{
+        line-height: 1.4;
+        width: 50rem;
+        font-size: 4.3rem;
+        grid-area: a;
+
+        @include respond(tab-port) { // width < 900px
+        grid-area: c;
+        width: 60rem;
+         justify-self: center;
+        }
+
+         @include respond(phone-middle) { // width < 600px
+           width: 45rem;
+           line-height: 1.15;
+           margin-left: -3.5rem;
+           font-size: 3.8rem;
+           text-align: center;
+        }
+        @include respond(phone-small) { // width < 600px
+        font-size: 3rem;
+        width: 35rem;
+        margin-top: 2rem;
+         }
+         @include respond(small-view) { // width < 450px
+        width: 30rem;
+        font-size: 2.6rem;
+         }
+
+    }
+
+    &--information-1{
+        font-size: 1.8rem;
+        margin-top: 21rem;
+        
+         grid-area: a;
+
+          @include respond(tab-port) { // width < 1200px
+            grid-area: c;
+           margin-top: 15rem;
+           margin-right: 6rem;
+            justify-self: center;
+        
+            }
+            @include respond(small-view) { // width < 450px
+            font-size: 1.6rem;
+         }
+    }
+    &--information-2{
+        font-size: 1.8rem;
+      margin-top: 25rem;
+     
+        
+         grid-area: a;
+
+          @include respond(tab-port) { // width < 900px
+            margin-top: 19rem;
+            margin-right: 5rem;
+            grid-area: c;
+             justify-self: center;
+            }
+             @include respond(small-view) { // width < 450px
+            font-size: 1.6rem;
+         }
+    }
+
+    &--socialn{
+        width: 50rem;
+        margin-top: -15rem;
+
+        @include respond(tab-port) { // width < 900px
+            grid-area: c;
+            margin-top: 25rem;
+            margin-left: 7rem;
+             justify-self: center;
+            justify-content: center;
+            text-align: center;
+        
+            }
+    }
+
+    &__form{
+        display: grid;
+       justify-self: right;
+         grid-area: b;
+         outline: none;
+         height: 58rem;
+
+          @include respond(tab-port) { // width < 900px
+            grid-area: d;
+            justify-self: left;
+            margin-top: 36rem;
+            margin-left: 5rem;
+        
+            }
+        
+
+        &--input{
+            font-family: $font-primary;
+             width: 50rem;
+            padding-left: 3rem;
+            height: 7rem;
+            margin-bottom: -4.5rem;
+            border: none;
+            @include borderCornerLeft;
+            transition: all .5s;
+            font-size: 1.8rem;
+
+            @include respond(tab-land) { // width < 1200px
+                width: 40rem;
+            }
+             @include respond(tab-port) { // width < 1200px
+                width: 50rem;
+            }
+
+             @include respond(phone-middle) { // width < 750px
+                width: 45rem;
+            }
+            @include respond(phone) { // width < 600px
+                width: 40rem;
+            }
+            @include respond(phone-small) { // width < 600px
+                width: 32rem;
+                margin-left: 4rem;
+             }
+             @include respond(small-view) { // width < 600px
+                width: 25rem;
+                height: 5rem;
+                margin-left: 8rem;
+            
+             }
+
+            &::placeholder{
+                color: $color-grey-mediam;
+            }
+
+            &:focus{
+                border: 1px solid $color-grey;
+                outline: none;
+                border-radius: 15px;
+            }
+        }
+
+        &--textarea{
+            height: 20rem;
+            padding-top: 2rem;
+            padding-left: 3rem;
+            border: none;
+            font-size: 1.8rem;
+            font-family: $font-primary;
+             @include borderCornerLeft;
+             padding-bottom: -20rem;
+
+
+              @include respond(tab-land) { // width < 1200px
+                width: 40rem;
+            }
+
+            @include respond(tab-port) { // width < 1200px
+                width: 50rem;
+            }
+            @include respond(phone-middle) { // width < 750px
+                width: 45rem;
+            }
+            @include respond(phone) { // width < 600px
+                width: 40rem;
+            }
+             @include respond(phone-small) { // width < 600px
+                width: 32rem;
+                margin-left: 4rem;
+             }
+             @include respond(small-view) { // width < 600px
+                width: 25rem;
+               margin-left: 8rem;
+            
+             }
+
+             &::placeholder{
+                color: $color-grey-mediam;
+            }
+
+            &:focus{
+                
+                border: 1px solid $color-grey;
+                outline: none;
+                border-radius: 15px;
+            }
+
+        }
+
+        &--btn{
+            font-size: 2rem;
+            font-weight: 500;
+            margin-left: 30rem;
+            margin-top: -5rem;
+            width: 20rem;
+            height: 7rem;
+
+            @include respond(tab-land) { // width < 1200px
+               margin-left: 18rem;
+            }
+
+            @include respond(small-view) { // width < 600px
+                width: 18rem;
+                margin-top: -8rem;
+               margin-left: 12rem;
+            
+             }
+          ;
+            
+            
+        }
+
+    }
+
+    
+}
+
+.contact__questions{
+    color: $color-5;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    box-sizing: border-box;
+
+     @include respond(tab-land) { // width < 1200px
+        grid-template-columns: repeat(2, 50rem);
+    }
+
+    @include respond(tab-port) { // width < 1200px
+       grid-template-columns: repeat(1, 1fr);
+       justify-content: center;
+       text-align: center;
+    }
+
+
+    &__asked{
+
+        padding: 2.5rem;
+        border: 1px solid #d8d8d8;
+        @include borderCornerLeft;
+        margin-bottom: 2.5rem;
+        margin-right: 2.5rem;
+        height: 10rem;
+        transition: all .5s;
+        cursor: pointer;
+
+        @include respond(small-view) { // width < 750px
+            margin-left: 2rem;  
+            width: 38rem;
+            }
+
+        &:hover, &--title:hover{
+            border-radius: 15px;
+            color: $color-4;
+            
+        }
+
+        &:checked {
+        display: block;
+            height: 20rem;
+            &--icon{
+            transform: rotate(45deg);
+
+            
+        }
+        }
+
+         &--click{
+            display: grid;
+            grid-template-columns: 50rem 1rem;
+
+
+            @include respond(tab-land) { // width < 1200px
+               grid-template-columns: 40rem 1rem;
+            }
+            @include respond(tab-port) { // width < 900px
+              grid-template-columns: 65rem 1rem;
+            }
+            @include respond(phone-middle) { // width < 900px
+              grid-template-columns: 44rem 1rem;
+            }
+            @include respond(phone) { // width < 600px
+              grid-template-columns: 38rem 1rem;
+            }
+            @include respond(phone-small) { // width < 450px
+              grid-template-columns: 31rem 1rem;
+            }
+            
+            
+        }
+
+        &--title{
+            display: inline-block;
+            font-size: 1.9rem;
+            font-weight: 500;
+            transition: all .2s;
+
+            @include respond(tab-port) { // width < 900px
+               font-size: 2.6rem;
+               width: 62rem;
+            }
+            @include respond(phone-middle) { // width < 750px
+               font-size: 2rem;
+               width: 41rem;
+            }
+            @include respond(phone) { // width < 600px
+               font-size: 1.8rem;
+               width: 37rem;
+            }
+            @include respond(phone-small) { // width < 450px
+               font-size: 1.65rem;
+               width: 35rem;
+            }
+             @include respond(small-view) { // width < 350px
+                font-size: 1.5rem;
+               width: 31rem;
+            }
+        }
+
+        &--icon{
+            cursor: pointer;
+            border-radius: 50px;
+            width: 3.5rem;
+            text-align: center;
+            background-color: $color-1;
+            color: $color-4;
+            font-size: 2.5rem;
+            display: inline-block;
+            margin-right: 1rem;
+            transition: transform .3s;
+             &:active{
+            
+            transform: rotate(90deg);
+
+            @include respond(tab-land) { // width < 1200px
+               
+            }
+        }
+        }
+
+        &--text{
+            margin-top: 2rem;
+            color: $color-3;
+            opacity: 0;
+            font-size: 1.7rem;
+        }
+    }
+
+}
+
+#question1 {
+    text-decoration: none ;
+            height: 20rem;
+
+           .contact__questions__asked{
+               &--icon{
+            transform: rotate(90deg);
+
+            }
+            &--text{
+                
+               
+                opacity: 1;
+            }
+            
+        }
+}

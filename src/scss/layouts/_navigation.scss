@@ -1,0 +1,287 @@
+.navigation{
+    display: grid;
+
+    animation: top-to-bottom 1s ease-in-out ;
+   
+    @include respond(tab-port) { // width < 900px
+      margin-left: -5rem;
+         }
+         
+
+    &__nav{
+        display: grid;
+        grid-template-columns: 0.91fr 9.8rem 12rem 8.8rem 14.5rem;
+        font-weight: 500;
+        color: $color-2;
+
+         @include respond(tab-land) { // width < 1200px
+           display: grid;
+        grid-template-columns: 0.1fr 9.8rem 12rem 8.8rem 1.5rem;
+         }
+
+        &--logo-box{
+            margin-left: 10rem;
+            margin-top: 4rem;
+
+             @include respond(small-view) { // width < 450px
+                margin-left: 7rem; 
+                }
+
+            &-img{
+                width: 10.8rem;
+                height: 8rem;
+                cursor: pointer;
+            }
+        }
+
+        &--options{
+            cursor: pointer;
+            margin-top: 4.5rem;
+             text-decoration: none;
+          
+            transition: all 0.1s;
+            font-size: 1.65rem;
+            font-weight: 500;
+
+            @include respond(phone-middle) { // width < 1200px
+                visibility: hidden;
+
+            }
+            
+
+
+            &:hover{
+                color: $color-3;
+            }
+
+            &-especial{
+                margin-top: 3.2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 1.3rem;
+                padding-bottom: 2rem;
+                height: 5rem;
+
+                @include respond(phone-middle) { // width < 1200px
+                visibility: hidden;
+
+            }
+                
+   
+            }
+        }
+    }
+
+     &__nav-template{
+        display: grid;
+        grid-template-rows: 0%;
+         margin-right: 2rem;
+        grid-template-columns: 0.91fr 15rem 12rem 14rem 14.5rem;
+        font-weight: 500;
+        color: $color-2;
+
+        &--options{
+            cursor: pointer;
+            margin-top: 4.5rem;
+            text-decoration: none;
+
+            
+            
+            flex-direction: column;
+            transition: all 0.1s;
+            font-size: 1.65rem;
+            font-weight: 500;
+
+            @include respond(phone-middle) { // width < 600px
+                visibility: hidden;
+            }
+
+            &:hover{
+                color: $color-3;
+            }
+        }
+    }
+
+
+    &__checkbox{
+        visibility: hidden;
+        position: fixed;
+        top:5rem;
+        left: 38rem;
+        z-index: 10;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100px;
+        opacity: 0;
+        transition: all .3s;
+
+        cursor: pointer;
+
+         @include respond(phone-middle) { // width < 750px
+        visibility: visible;
+        left: 66rem;
+        
+    }
+     @include respond(phone) { // width < 750px
+        
+        left: 50rem;
+        
+    }
+
+     @include respond(phone-small) { // width < 450px
+        left: 40rem; 
+    }
+    @include respond(small-view) { // width < 450px
+        left: 28rem; 
+    }
+
+        
+        
+
+        &--options{
+            visibility: hidden;
+        }
+        
+        
+    }
+
+    &__button{
+        visibility: hidden;
+        position: fixed;
+         top:5rem;
+        left: 38rem;
+        padding-top: .8rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: $color-white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+        background-color: $color-4;
+
+        transition: all .3s;
+        animation: top-to-bottom 1s ease-in-out ;
+
+         @include respond(phone-middle) { // width < 750px
+        visibility: visible;
+        left: 66rem;
+        
+        }
+         @include respond(phone) { // width < 750px
+        
+        left: 50rem;
+        
+        }
+
+        @include respond(phone-small) { // width < 450px
+        left: 40rem; 
+        }
+
+        @include respond(small-view) { // width < 350px
+        left: 28rem; 
+        }
+
+    }
+
+
+   }
+
+
+ .navigation__checkbox:checked ~ .navigation__nav{
+        display: grid;
+        margin: 0;
+        
+        
+        .navigation__checkbox{
+        position: fixed;
+            
+            left: 100rem;
+           transition: all .3s;
+            padding: 2rem;
+
+           &--options{
+            margin-left: 30rem;
+            visibility:visible;
+            display: flex;
+             
+            background-color: $color-white;
+            
+            padding: 2rem;
+            width: 40rem;
+            height: 6rem;
+
+            transition: all .3s;
+
+             @include respond(phone) { // width < 600px
+            margin-left: 15rem;
+
+            }
+            @include respond(phone-small) { // width < 450px
+                 margin-left: 10rem; 
+                 }
+
+                  @include respond(small-view) { // width < 350px
+                margin-left: 8rem; 
+                width: 30rem;
+                }
+           
+        }
+
+           &::after{
+                border: none  !important;
+           }
+
+            &-especial{
+               visibility: hidden;
+            }
+            
+        }
+
+        
+         
+    }
+
+    .navigation__checkbox:checked ~ .navigation__button{
+                background-color: $color-white;
+                color: $color-4;
+            }
+
+
+
+  .option-1{    
+     border-top-right-radius: 30px  ;
+    }
+ .option-3{
+       border-bottom-left-radius: 30px  ;
+ }
+
+
+
+
+.nav{
+    &-1{
+      width: 5.5rem;
+    }
+     &-2{
+        width: 6.9rem;
+    }
+     &-3{
+        width: 4.2rem;
+    }
+}
+
+
+
+
+.nabvar-link{
+    &-1{
+      width: 9.4rem;
+    }
+    &-2{
+        width: 7.8rem;
+    }
+    &-3{
+        width: 9.2rem;
+    }
+}

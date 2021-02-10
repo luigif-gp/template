@@ -1,0 +1,230 @@
+h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: $color-5;
+}
+
+h2{
+     font-size: 4.3rem;
+    font-weight: 600;
+    color: $color-5;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $color-5;
+
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-5;
+}
+
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-5;
+}
+
+h6{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-4;
+}
+
+ul{
+    margin-left: 3rem;
+    line-height: 1.6;
+}
+
+
+
+.intro__sections{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    
+
+&--big_text{
+    color: $color-5;
+   
+    font-size: 4rem;
+    text-align: center;
+    width: 45rem;        
+    line-height: 1.2;
+    
+
+&-2{
+    color: $color-5;
+    font-size: 4.2rem;
+     font-weight: 600;
+    text-align: center;
+    width: 80rem;        
+    line-height: 1.2;
+
+    @include respond(phone) { // width < 600px
+        width: 40rem;
+        font-size: 3.5rem;
+     }
+}
+
+    
+}
+
+
+&--about_text{
+    color: $color-4;
+    font-size: 1.3rem;
+    width: 12rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.7rem;
+    max-width: 15rem;
+    background-color: #e4fcf5;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+    
+
+    }
+}
+
+
+.text-border-move{
+   
+        cursor: pointer;
+        transition: color 0.5s;
+         border-bottom: 1px solid rgb(224, 222, 222);
+       width: 10rem;
+        &:hover{
+            color: $color-blue;
+        }
+
+        &::after{
+            display: block;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid ;
+            transition: all 0.3s;
+            border-bottom: 1px solid $color-blue;
+            content: '';
+            transform: scaleX(0);
+            transition: transform 0.5s;
+       }
+
+       &:hover::after{
+         transform: scaleX(1);
+       }
+
+       &:after{
+           transform-origin:  0% 0%;
+       }
+    }
+
+
+    .text-border-move-nabvar{
+   
+        cursor: pointer;
+        transition: color 0.5s;
+         
+       
+        &:hover{
+            color: $color-5;
+        }
+
+        &::after{
+            display: block;
+            padding-bottom: 0.5rem;
+            transition: all 0.3s;
+            border-bottom: 3px solid $color-5;
+            content: '';
+            transform: scaleX(0);
+            transition: transform 0.5s;
+       }
+
+       &:hover::after{
+         transform: scaleX(1);
+       }
+
+       &:after{
+           transform-origin:  0% 0%;
+       }
+}
+
+
+.md-width{
+     width: 50rem;
+}
+
+.sl-width{
+    width: 45rem;
+}
+
+
+///BLOG CONTENT
+
+
+.big-heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $color-5;
+
+     @include respond(phone) { // width < 1200px
+    font-size: 3rem;
+    }
+
+}
+
+.middle-heading{
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    
+     @include respond(phone) { // width < 1200px
+    font-size: 2.5rem;
+    }
+}
+
+.small-heading{
+     font-size: 2.5rem;
+     font-weight: 600;
+
+     
+     @include respond(phone) { // width < 1200px
+    font-size: 2rem;
+    }
+}
+
+.text{
+    line-height: 1.4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: $color-3;
+}
+
+.decorated{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    border-left: 5px solid $color-1;
+}
+
+.text-center{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+.line-divider{
+    margin: 0;
+    border-top: 0.5px solid #cfcfcf;
+}

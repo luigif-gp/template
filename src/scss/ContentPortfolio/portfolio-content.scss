@@ -1,0 +1,220 @@
+.portfolio-content{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+
+    
+    background-color: $color-1;
+    height: 124.5rem;
+
+   
+
+     
+}
+
+.portfolio_C{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+   
+
+    display: grid;
+    grid-template-columns: 88rem;
+    grid-template-areas: 
+    "a   b "
+    "s   b  "
+    "d   b ";
+    
+
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+     @include respond(middle-desktop-max) { // width < 1450px
+      grid-template-columns: 58rem;
+    margin-left: 2rem;
+      margin-right: 0rem;
+     }
+      @include respond(tab-land) { // width < 1200px
+
+        grid-template-areas: 
+        "t t t t"
+        "g g g g"
+        "v v v x";
+            text-align: center;
+           width: 160%;
+           margin-top: 1rem;
+            align-self: center;
+            justify-content: center;  
+            align-items: center;
+            margin-left: 0rem;
+      
+        }
+
+        @include respond(tab-port) { // width < 900px
+            width: 170%;
+        }
+        @include respond(phone-middle) { // width < 750px
+            width: 180%;
+        }
+        @include respond(phone) { // width < 600px
+            width: 220%;
+        }
+         @include respond(phone-small) { // width < 450px
+            width: 255%;
+        }
+         @include respond(small-view) { // width < 600px
+            width: 280%;
+        }
+         @include respond(mini-view) { // width < 600px
+            width: 310%;
+        }
+
+
+    &--label{
+         grid-area: a;
+        padding: 1rem;
+        width: 14rem;
+
+        justify-self: left;
+        text-align: center;
+        border-radius: 10px;
+        color: $color-white;
+        font-size: 1.55rem;
+
+         @include respond(tab-land) { // width < 1200px
+            grid-area: t;
+            height: 4rem;
+            margin-bottom: 20rem;
+            margin-left: 50rem;
+          }
+          @include respond(small-view) { // width < 600px
+           margin-left: 49rem;
+        }
+    }
+
+    &--title{
+         grid-area: s;
+        margin-top: 2rem;
+        line-height: 1.4;
+        width: 50rem;
+        font-size: 4.4rem;
+        color: $color-5;
+        font-weight: 600;
+         @include respond(tab-land) { // width < 1200px
+        grid-area: t;
+        margin-bottom: 12rem;
+        margin-left: 32rem
+        }
+        @include respond(phone) { // width < 600px
+          font-size: 3.8rem;
+        }
+        @include respond(phone-small) { // width < 600px
+            font-size: 3.5rem;
+        }
+        @include respond(small-view) { // width < 600px
+           font-size: 3rem;
+        }
+    }
+
+    &--text{
+        grid-area: d;
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+
+        color: $color-3;
+        width: 50rem;
+        font-size: 1.8rem;
+         @include respond(tab-land) { // width < 1200px
+            grid-area: t;
+            margin-left: 32rem;
+            margin-top: 14rem;
+        }
+        @include respond(phone) { // width < 600px
+            width: 35rem;
+            margin-left: 40rem;
+        }
+        @include respond(phone-small) { // width < 600px
+            font-size: 1.6rem;
+        }
+        @include respond(small-view) { // width < 600px
+           font-size: 1.5rem;
+           width: 28rem;
+           margin-left: 43rem;
+        }
+    }
+
+    &__graph{
+        display: grid;
+        grid-column: 1;
+        justify-content: left;
+        grid-area: b;
+        
+        margin-top: 8rem;
+        grid-template-columns: 15rem 15rem 18rem;  
+        
+        @include respond(tab-land) { // width < 1200px
+            grid-area: g;
+            margin-top: -5rem;
+            margin-left: 35rem;
+            height: 4rem;
+            margin-bottom: 10rem;
+            
+     }
+
+     @include respond(phone-small) { // width < 600px
+           grid-template-columns: 10rem 10rem 10rem;
+           margin-left: 42rem;
+        }
+        @include respond(small-view) { // width < 600px
+            grid-template-columns: 9rem 9rem 9rem;
+        }
+
+        &--name{
+            margin-bottom: 1rem;
+           color: $color-5;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        &--description{
+            font-size: 1.6rem;
+           color: $color-3;
+        }
+   
+    }
+
+     &--img{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 125rem;
+    max-height: 70.5rem;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    
+
+    @include respond(middle-desktop-max) { // width < 1450px
+            margin-left: -0rem;
+            width: 80rem;
+        }
+
+       @include respond(tab-land) { // width < 1200px
+            grid-area: v;    
+            justify-content: center;
+            align-items: center;
+            margin-left: 0rem;
+            margin-right: 56rem;
+        }
+    }
+}
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-blue;
+}
+
