@@ -12,6 +12,9 @@
      @include respond(tab-land) { // width < 1200px
         height: 150rem;
     }
+    @include respond(phone-middle) { // width < 1200px
+        border-top-right-radius: 0px ;
+    }
 
 
      &__header{
@@ -39,6 +42,10 @@
               align-self: center;
                 
              }
+
+               @include respond(phone-middle) { // width < 750px
+                   margin-top: 20rem;
+                 }
 
      }
          
@@ -204,26 +211,43 @@
             justify-self: center;
 
             &-img{
-                width: 140rem;
+                border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;
+
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 130rem;
+                height: 60rem;
+            
+                
                 z-index: 0;
 
                 @include respond(middle-desktop-max) { // width < 1450px
                 width: 100rem;
+                 height: 50rem;
                  }
                  @include respond(tab-land) { // width < 1200px
                 width: 80rem;
+                 height: 40rem;
                  }
                   @include respond(tab-port) { // width < 900px
                 width: 60rem;
+                 height: 30rem;
                  }
                   @include respond(phone-middle) { // width < 750px
                     width: 50rem;
+                     height: 25rem;
+                      border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+
                  }
                   @include respond(phone) { // width < 750px
-                    width: 40rem;
+                    width: 45rem;
+                     height: 20rem;
                  }
                  @include respond(phone-small) { // width < 600px
-                width: 35rem;
+                width: 40rem;
                 }
                 @include respond(small-view) { // width < 600px
                 width: 38rem;
@@ -233,16 +257,10 @@
             }
 
             &-playlogo{
-              
-                width: 90%;
-                margin-top: 25rem;
-               
-                position: absolute;
-                font-size: 10rem;
-                z-index: 0;
-                
-                color: $color-black;
-                transition: transform .3s;
+            font-size: 11rem;
+            color: $color-white;
+              margin-top: 20rem;
+              transition: transform .3s ease-in-out;
 
                 @include respond(middle-desktop-max) { // width < 1450px
                     width: 70%;
@@ -252,30 +270,29 @@
 
                 @include respond(tab-land) { // width < 1200px
                 font-size: 8rem;
+                margin-top: 15rem;
                 }
 
               @include respond(tab-port) { // width < 900px
-                width: 60%;
                 margin-top: 10rem;
                 font-size: 7rem;
              }
               @include respond(phone-middle) { // width < 750px
-                font-size: 6rem;     
+                font-size: 6rem;
+                 margin-top: 9rem;     
                 }
              @include respond(phone) { // width < 600px
-                width: 60%;
-                margin-top: 7rem;
+                 margin-top: 7rem;
                 font-size: 5rem;
                 }
                  @include respond(phone-small) { // width < 600px
-                    width: 68%;
-                    margin-top: 7rem;
+                    
                     font-size: 4rem;    
               }
               @include respond(small-view) { // width < 600px
                 font-size: 3rem;
-                    width: 90%;
-                    margin-top: 7rem;
+                 margin-top: 8rem;
+                   
                  }
 
                 &:hover{
@@ -358,6 +375,9 @@
               top: 30rem;
                 
              }
+              @include respond(phone-middle) { // width < 1200px
+                right: -35rem;
+             }
 
               @include respond(phone) { // width < 900px
               right: -40rem;
@@ -366,7 +386,7 @@
              @include respond(phone-small) { // width < 1200px
               width: 18rem;
               height: 14rem;
-             right: -43rem;
+             right: -38rem;
                 
              }
 
@@ -391,6 +411,9 @@
               top: 55rem;
                 
              }
+             @include respond(phone-middle) { // width < 1200px
+                right: -35rem;
+             }
 
              @include respond(phone) { // width < 900px
               right: -40rem;
@@ -399,7 +422,7 @@
              @include respond(phone-small) { // width < 1200px
               width: 22rem;
               height: 15rem;
-               right: -43rem;
+               right: -38rem;
              }
 
          border-bottom-left-radius: 20px;

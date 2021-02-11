@@ -7,6 +7,9 @@
 
      @include respond(tab-port) { // width < 900px
         height: 65rem;    
+    }
+    @include respond(phone) { // width < 900px
+        border-bottom-left-radius: 0px;  
 
     }
 
@@ -31,7 +34,7 @@
      }
 
      @include respond(tab-land) { // width < 1200px
-         grid-template-columns: 19rem 20rem 20rem 50rem;
+         grid-template-columns: 19rem 20rem 20rem 20rem;
      }
 
      @include respond(tab-port) { // width < 900px

@@ -221,6 +221,18 @@ ul{
     justify-content: center;
     text-align: center;
     margin-bottom: 5rem;
+    text-align: center;
+    justify-self: center;
+
+    @include respond(tab-port) { // width < 450px
+      margin-left: 14rem;
+     }
+     @include respond(phone) { // width < 450px
+      margin-left: 3rem;
+     }
+     @include respond(phone-small) { // width < 450px
+      margin-left: -3rem;
+     }
 }
 
 

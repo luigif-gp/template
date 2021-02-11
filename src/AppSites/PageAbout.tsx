@@ -1,10 +1,17 @@
 import React, {useState} from 'react';
-import { Icons } from '../components/comp.icons';
+
+///LAYOUTS
 import { Navbar } from '../layouts/Navbar';
+import { Footer } from "../layouts/footer";
+
+///COMPONENTS
+
 import { IoPlayCircle } from "react-icons/io5";
 import { ModalVideo } from './modalVideo/ModalVideo';
 import { Blog } from '../components/comp.myBlog';
-import { Footer } from '../layouts/footer';
+
+///OTHERS
+import { Icons } from "../components/comp.icons";
 
 export const PageAbout = () => {
 
@@ -17,8 +24,11 @@ export const PageAbout = () => {
        setIsOpen(false);
      }
 
+     const Background =
+       "https://uploads-ssl.webflow.com/5fbfced1616001801fabc45b/5fdc9e92d8b902310d599de8_Video%20Image.png";
+
     return (
-      <div className="page-about">
+      <div className="page-about" id="contact">
         <Navbar />
         <div className="page-about__header">
           <div className="page-about__content-area">
@@ -67,11 +77,12 @@ export const PageAbout = () => {
             onClick={() => ActiveModal()}
             className="page-about__workflow--video"
           >
-            <img
-              src="/desktop.png"
+            <div
+              style={{ backgroundImage: "url(" + Background + ")" }}
               className="page-about__workflow--video-img"
-            />
-            <IoPlayCircle className="page-about__workflow--video-playlogo" />
+            >
+              <IoPlayCircle className="page-about__workflow--video-playlogo" />
+            </div>
           </div>
           <div className="page-about__workflow--content">
             <h1 className="page-about__workflow--content-title">

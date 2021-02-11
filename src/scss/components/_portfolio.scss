@@ -66,7 +66,7 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
-        
+       
     
         
         
@@ -84,17 +84,19 @@
             display:flex;
             flex-direction: column;
             justify-content: space-around;
+            justify-self: center;
+            
 
           @include respond(middle-desktop-max) { // width < 1450px
             width: 50rem;
          }
 
          @include respond(tab-land) { // width < 1200px
-            width: 48rem;
+            width: 40rem;
            
             }
              @include respond(tab-port) { // width < 900px
-             align-items: center;    
+                align-items: center;    
                 width: 30rem;
             }
             @include respond(phone) { // width < 900px
@@ -185,6 +187,10 @@
             margin-top: 4rem;
             margin-left: 3rem;
 
+            @include respond(tab-land) { // width < 1450px
+            margin-left: 1rem;
+         }
+
             @include respond(phone-small) { // width < 900px
              margin-left: -5rem;
             }
@@ -201,7 +207,10 @@
 
              @include respond(middle-desktop-max) { // width < 1450px
             width: 50rem;
-         }
+            }
+                @include respond(tab-land) { // width < 1450px
+                width: 38rem;
+                }
 
          @include respond(phone-small) { // width < 900px
              
@@ -236,6 +245,16 @@
         @include borderCornerLeft;
         cursor: pointer;
         transition: all 0.3s;
+
+        @include respond(tab-port) { // width < 900px
+                transform: translateX(7rem)
+            }
+        @include respond(tab-port) { // width < 900px
+                transform: translateX(4rem)
+            }
+         @include respond(phone-small) { // width < 900px
+                transform: translateX(0rem)
+            }
 
         &:hover{
             @include borderCornerRight;

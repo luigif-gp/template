@@ -17,7 +17,10 @@ import { Footer } from './layouts/footer';
 import { Features } from './components/comp.features';
 import { Navbar } from './layouts/Navbar';
 
-export const App2 = () => {
+
+interface Props {}
+
+export const App2:React.FC<Props>  = () => {
     return (
       <div className="">
         <header className="container__header">

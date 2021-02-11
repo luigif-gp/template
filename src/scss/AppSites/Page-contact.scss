@@ -8,8 +8,11 @@
     border-top-right-radius: 120px ;
      border-bottom-left-radius: 120px ;
 
-     @include respond(tab-port) { // width < 600px
+
+     @include respond(tab-port) { // width < 900px
      height: 110rem;
+      border-top-right-radius: 0px ;
+      border-bottom-right-radius: 120px ;
             
     }
 }
@@ -297,6 +300,16 @@
         transition: all .5s;
         cursor: pointer;
 
+         @include respond(tab-port) { // width < 1200px
+                width: 70rem;
+            }
+          @include respond(phone-middle) { // width < 1200px
+                width: 68rem;
+            } 
+          @include respond(phone) { // width < 1200px
+                width: 50rem;
+            }     
+
         @include respond(small-view) { // width < 750px
             margin-left: 2rem;  
             width: 38rem;
@@ -327,15 +340,13 @@
                grid-template-columns: 40rem 1rem;
             }
             @include respond(tab-port) { // width < 900px
-              grid-template-columns: 65rem 1rem;
+              grid-template-columns: 60rem 1rem;
             }
-            @include respond(phone-middle) { // width < 900px
-              grid-template-columns: 44rem 1rem;
-            }
+            
             @include respond(phone) { // width < 600px
-              grid-template-columns: 38rem 1rem;
+               grid-template-columns: 43rem 1rem;
             }
-            @include respond(phone-small) { // width < 450px
+            @include respond(small-view) { // width < 450px
               grid-template-columns: 31rem 1rem;
             }
             
@@ -352,20 +363,14 @@
                font-size: 2.6rem;
                width: 62rem;
             }
-            @include respond(phone-middle) { // width < 750px
-               font-size: 2rem;
-               width: 41rem;
-            }
-            @include respond(phone) { // width < 600px
-               font-size: 1.8rem;
-               width: 37rem;
-            }
-            @include respond(phone-small) { // width < 450px
-               font-size: 1.65rem;
-               width: 35rem;
-            }
+            @include respond(phone) { // width < 1200px
+                width: 50rem;
+                margin-left: -3rem;
+                font-size: 2rem;
+            }    
              @include respond(small-view) { // width < 350px
                 font-size: 1.5rem;
+                margin-left: 0rem;
                width: 31rem;
             }
         }

@@ -19,6 +19,10 @@
         grid-template-columns: 0.1fr 9.8rem 12rem 8.8rem 1.5rem;
          }
 
+        &--phone{
+            position: absolute;
+        }
+
         &--logo-box{
             margin-left: 10rem;
             margin-top: 4rem;
@@ -135,9 +139,6 @@
         left: 28rem; 
     }
 
-        
-        
-
         &--options{
             visibility: hidden;
         }
@@ -164,8 +165,8 @@
         animation: top-to-bottom 1s ease-in-out ;
 
          @include respond(phone-middle) { // width < 750px
-        visibility: visible;
-        left: 66rem;
+            visibility: visible;
+            left: 66rem;
         
         }
          @include respond(phone) { // width < 750px

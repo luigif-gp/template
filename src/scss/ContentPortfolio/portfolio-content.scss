@@ -8,7 +8,18 @@
     background-color: $color-1;
     height: 124.5rem;
 
-   
+    @include respond(tab-land) { // width < 900px
+            height: 110rem;
+        }
+        @include respond(phone-middle) { // width < 750px
+           height: 100rem;
+        }
+        @include respond(phone) { // width < 750px
+           height: 90rem;
+        }
+        @include respond(small-view) { // width < 750px
+           height: 80rem;
+        }
 
      
 }
@@ -50,20 +61,22 @@
             justify-content: center;  
             align-items: center;
             margin-left: 0rem;
+            margin-bottom: 20rem;
       
         }
 
         @include respond(tab-port) { // width < 900px
-            width: 170%;
+            width: 150%;
         }
         @include respond(phone-middle) { // width < 750px
-            width: 180%;
+            width: 160%;
+            margin-bottom: 10rem;
         }
         @include respond(phone) { // width < 600px
-            width: 220%;
+            width: 160%;
         }
          @include respond(phone-small) { // width < 450px
-            width: 255%;
+            width: 246%;
         }
          @include respond(small-view) { // width < 600px
             width: 280%;
@@ -87,12 +100,17 @@
          @include respond(tab-land) { // width < 1200px
             grid-area: t;
             height: 4rem;
-            margin-bottom: 20rem;
-            margin-left: 50rem;
+            margin-bottom: 22rem;
+            margin-left: 3rem;
+          
+          }
+           @include respond(phone-small) { // width < 1200px
+             margin-left: -9rem;
+            
           }
           @include respond(small-view) { // width < 600px
-           margin-left: 49rem;
-        }
+             margin-left: -11rem;
+            }
     }
 
     &--title{
@@ -105,17 +123,25 @@
         font-weight: 600;
          @include respond(tab-land) { // width < 1200px
         grid-area: t;
+        line-height: 1.4;
+        font-size: 4rem;
         margin-bottom: 12rem;
-        margin-left: 32rem
+        margin-left: -13rem;
         }
         @include respond(phone) { // width < 600px
-          font-size: 3.8rem;
+          font-size: 3.3rem;
         }
-        @include respond(phone-small) { // width < 600px
-            font-size: 3.5rem;
+        @include respond(phone-small) { // width < 450px
+            font-size: 2.5rem;
+            width: 35rem;
+            line-height: 1;
+            margin-left: -19.5rem;
+            
         }
-        @include respond(small-view) { // width < 600px
-           font-size: 3rem;
+        @include respond(small-view) { // width < 350px
+           margin-left: -21.5rem;
+            font-size: 2.2rem;
+           
         }
     }
 
@@ -129,20 +155,23 @@
         font-size: 1.8rem;
          @include respond(tab-land) { // width < 1200px
             grid-area: t;
-            margin-left: 32rem;
+            margin-left: -13rem;
             margin-top: 14rem;
         }
         @include respond(phone) { // width < 600px
             width: 35rem;
-            margin-left: 40rem;
+            margin-left: -6rem;
+        
         }
         @include respond(phone-small) { // width < 600px
             font-size: 1.6rem;
+            margin-left: -20rem;
         }
         @include respond(small-view) { // width < 600px
-           font-size: 1.5rem;
+           font-size: 1.4rem;
+           margin-left: -18rem;
            width: 28rem;
-           margin-left: 43rem;
+           
         }
     }
 
@@ -153,12 +182,12 @@
         grid-area: b;
         
         margin-top: 8rem;
-        grid-template-columns: 15rem 15rem 18rem;  
+        grid-template-columns: 10rem 15rem 10rem;  
         
         @include respond(tab-land) { // width < 1200px
             grid-area: g;
             margin-top: -5rem;
-            margin-left: 35rem;
+            margin-left: -7rem;
             height: 4rem;
             margin-bottom: 10rem;
             
@@ -166,7 +195,7 @@
 
      @include respond(phone-small) { // width < 600px
            grid-template-columns: 10rem 10rem 10rem;
-           margin-left: 42rem;
+           margin-left: -18rem;
         }
         @include respond(small-view) { // width < 600px
             grid-template-columns: 9rem 9rem 9rem;
@@ -191,23 +220,51 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-width: 125rem;
+    max-width: 125rem;
     max-height: 70.5rem;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     
 
     @include respond(middle-desktop-max) { // width < 1450px
-            margin-left: -0rem;
-            width: 80rem;
+            margin-left: 0rem;
+            
+            width: 110rem;
         }
 
        @include respond(tab-land) { // width < 1200px
             grid-area: v;    
             justify-content: center;
             align-items: center;
+            margin-left: 2rem;
+            transform: translateX(-35rem);
+            width: 90rem;
+             
+           
+        }
+         @include respond(tab-port) { // width < 900px
+            width: 80rem;
+             transform: translateX(-30rem);
             margin-left: 0rem;
-            margin-right: 56rem;
+           
+        }
+        @include respond(phone-middle) { // width < 900px
+            width: 70rem;
+             transform: translateX(-24rem);
+            margin-left: 0rem;
+        }
+        @include respond(phone) { // width < 900px
+            width: 60rem;
+             transform: translateX(-20rem);
+        }
+         @include respond(phone-small) { // width < 900px
+            width: 50rem;
+             transform: translateX(-31.5rem);
+        }
+        @include respond(small-view) { // width < 900px
+            width: 40rem;
+             transform: translateX(-28rem);
+           
         }
     }
 }
