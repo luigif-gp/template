@@ -1,6 +1,11 @@
 import React from 'react';
+
+//DATA
 import { DTblog } from '../datas/data.blog';
-import { useHistory } from "react-router-dom";
+
+///ROUTER
+import { Link } from "react-router-dom";
+
 
 interface Props{
   active?: boolean;
@@ -14,18 +19,6 @@ export const Blog = (props: Props) => {
     var limit: Number;
 
     !props.match ? limit = 2 : limit = props.match
-    
-
-     let history = useHistory();
-
-   const Navegation = (LINK: string) => {
-     
-     history.push(LINK);
-      window.location.reload();
-    
-   }
-
-   
 
     return (
       <div>
@@ -43,8 +36,8 @@ export const Blog = (props: Props) => {
           {DTblog.map((data) =>
             data.id === limit && !props?.active ? null : (
               <div className="blog__box">
-                <a
-                  onClick={() => Navegation(`/post/${data.id}`)}
+                <Link
+                  to={`/post/${data.id}`}
                   className="blog__box--img"
                 >
                   <img
@@ -52,16 +45,16 @@ export const Blog = (props: Props) => {
                     alt=""
                     className="blog__box--img-pictures"
                   />
-                </a>
+                </Link>
                 <small className="blog__box--type">{data.type}</small>
                 <h3 className="blog__box--title">{data.title}</h3>
                 <p className="blog__box--date">{data.date}</p>
-                <a
-                  onClick={() => Navegation(`/post/${data.id}`)}
+                <Link
+                  to={`/post/${data.id}`}
                   className="blog__box--read-more text-border-move"
                 >
                   Read More
-                </a>
+                </Link>
               </div>
             )
           )}

@@ -1,5 +1,7 @@
 import React from 'react';
-import { TemplateNavbar } from './templateNavbar';
+
+///TEMPLATESLAYOUTS
+import { TemplateNavbar } from './layouts/templateNavbar';
 import { Footer } from '../layouts/footer';
 
 

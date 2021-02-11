@@ -1,6 +1,11 @@
 import React,{useState} from 'react';
+
+//DATA
 import {Data} from '../datas/data.Portfolio';
+
+///ROUTER
 import { useHistory } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 interface Props {
   active?: boolean
@@ -19,11 +24,6 @@ export const Portfolio = (props: Props) => {
 
    
      let history = useHistory();
-
-     const Navegation = (LINK: string) => {
-       history.push(LINK);
-       window.location.reload();
-     };
 
     
 
@@ -79,8 +79,8 @@ export const Portfolio = (props: Props) => {
             dataSelect !== "all" ? null : data.id === limit &&
               props?.active !== true ? null : (
               <div className="portfolio__list--box">
-                <a
-                  onClick={() => Navegation(`/work/${data.id}`)}
+                <Link
+                  to={`/work/${data.id}`}
                   className="portfolio__list--imgbox"
                 >
                   <img
@@ -94,7 +94,7 @@ export const Portfolio = (props: Props) => {
                   >
                     {data.type}
                   </label>
-                </a>
+                </Link>
                 <div className="portfolio__list--box-text">
                   <h2 className="portfolio__list--box-text-title">
                     {data.title}
@@ -103,19 +103,19 @@ export const Portfolio = (props: Props) => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent vulputate pellentesque orci et rutrum.
                   </p>
-                  <a
-                    onClick={() => Navegation(`/work/${data.id}`)}
+                  <Link
+                    to={`/work/${data.id}`}
                     className="portfolio__list--box-text-case text-border-move"
                   >
                     Case Study
-                  </a>
+                  </Link>
                 </div>
               </div>
             )
           )}
         </div>
         {props?.active ? null : (
-          <button onClick={() => Navegation("/portfolio")} className="portfolio__viewall-btn">View All Works</button>
+          <Link to="portfolio" className="portfolio__viewall-btn">View All Works</Link>
         )}
       </div>
     );

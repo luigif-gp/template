@@ -7,7 +7,7 @@ import { Navbar } from "../../layouts/Navbar";
 ////COMPONENTS
 
 import { DTblog } from '../../datas/data.blog';
-import { Blog } from "../../components/comp.myBlog";
+import { Blog } from "../../HOME.components/comp.myBlog";
 
 ///CONTENTS
 import { Content1 } from './ContentArticles/Content-1';

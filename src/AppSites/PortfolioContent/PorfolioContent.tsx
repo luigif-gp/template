@@ -5,7 +5,7 @@ import { Footer } from "../../layouts/footer";
 import { Navbar } from "../../layouts/Navbar";
 
 ///COMPONENTS
-import { Portfolio } from '../../components/comp.portfolio';
+import { Portfolio } from '../../HOME.components/comp.portfolio';
 import { ContentPortf } from './contentPortf';
 
 //DATA PORTFOLIO

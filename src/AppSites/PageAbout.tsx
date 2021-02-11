@@ -8,10 +8,10 @@ import { Footer } from "../layouts/footer";
 
 import { IoPlayCircle } from "react-icons/io5";
 import { ModalVideo } from './modalVideo/ModalVideo';
-import { Blog } from '../components/comp.myBlog';
+import { Blog } from '../HOME.components/comp.myBlog';
 
 ///OTHERS
-import { Icons } from "../components/comp.icons";
+import { Icons } from "../HOME.components/comp.icons";
 
 export const PageAbout = () => {
 

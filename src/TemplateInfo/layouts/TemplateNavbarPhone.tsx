@@ -1,7 +1,9 @@
 import React from "react";
+
+///ROUTER
+import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import { Licenses } from './templateLicenses';
-import { Changelog } from './templateChangelog';
+
 
 export const TemplateNavbarPhone = () => {
 
@@ -25,24 +27,24 @@ export const TemplateNavbarPhone = () => {
       </label>
       <nav className="navigation__nav">
         <div className="navigation__nav--phone">
-          <a
-            onClick={() => Navegation("/template-info/styles-guide")}
+          <Link
+            to="/template-info/styles-guide"
             className=" navigation__checkbox--options option-1"
           >
             Style Guide
-          </a>
-          <a
-            onClick={() => Navegation("/template-info/licenses")}
+          </Link>
+          <Link
+            to="/template-info/licenses"
             className=" navigation__checkbox--options "
           >
             Licenses
-          </a>
-          <a
-            onClick={() => Navegation("/template-info/changelog")}
+          </Link>
+          <Link
+            to="/template-info/changelog"
             className=" navigation__checkbox--options option-3 "
           >
             Changelog
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

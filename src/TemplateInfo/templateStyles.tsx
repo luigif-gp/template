@@ -1,7 +1,10 @@
 import React from 'react';
-import { TemplateNavbar } from './templateNavbar';
-import { Footer } from '../layouts/footer';
+
+///DATA
 import { ColorsData } from './data-color';
+////TEMPLATESLAYOUT
+import { TemplateNavbar } from "./layouts/templateNavbar";
+import { Footer } from "../layouts/footer";
 
 export const StylesGuide = () => {
 

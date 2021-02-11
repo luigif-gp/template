@@ -1,16 +1,13 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+
+///ROUTER
 import { Link } from "react-router-dom";
 
 interface Props{}
 
 
 export const Features: React.FC<Props> = () => {
-  let history = useHistory();
-
-  const Navegation = (LINK: string) => {
-    history.push(LINK);
-  };
+ 
 
   return (
     <div className="row">

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 /////PAGES
-import { App2 } from './App2';
+import { Home } from './HOME.components/Home';
 import { PageAbout } from './AppSites/PageAbout';
 import { PagePortfolio } from './AppSites/PagePortfolio';
 import { PageBlog } from './AppSites/PageBlog';
@@ -27,7 +27,7 @@ export const AppRouter: React.FC = () => {
           <ScrollToTop/>
         <div className="container">
 
-            <Route exact path="/" component={App2} />
+            <Route exact path="/" component={Home} />
             <Switch>
               <Route exact path="/about" component={PageAbout} />
               <Route exact path="/portfolio" component={PagePortfolio} />

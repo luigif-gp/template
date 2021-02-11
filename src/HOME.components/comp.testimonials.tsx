@@ -1,5 +1,6 @@
 import React from 'react';
 
+///OTHERSS
 import { useMediaQuery } from 'react-responsive';
 import Whirligig from "react-whirligig";
 

@@ -1,6 +1,11 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+
+///LAYOUT
 import { TemplateNavbarPhone } from './TemplateNavbarPhone';
+
+///ROUTERR
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const TemplateNavbar = () => {
 
@@ -25,24 +30,24 @@ return (
         />
       </div>
 
-      <a
-        onClick={() => Navegation("/template-info/styles-guide")}
+      <Link
+        to="/template-info/styles-guide"
         className="navigation__nav-template--options text-border-move-nabvar nabvar-link-1"
       >
         Style Guide
-      </a>
-      <a
-        onClick={() => Navegation("/template-info/licenses")}
+      </Link>
+      <Link
+        to="/template-info/licenses"
         className="navigation__nav-template--options text-border-move-nabvar nabvar-link-2"
       >
         Licenses
-      </a>
-      <a
-        onClick={() => Navegation("/template-info/changelog")}
+      </Link>
+      <Link
+        to="/template-info/changelog"
         className="navigation__nav-template--options text-border-move-nabvar nabvar-link-3"
       >
         Changelog
-      </a>
+      </Link>
       <a
         href="https://webflow.com/templates/html/tara-portfolio-website-template"
         className="navigation__nav--options-especial btn-secondary"

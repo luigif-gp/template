@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+
+///LAYOUTS
 import { Navbar } from '../layouts/Navbar';
 import { Footer } from '../layouts/footer';
 import { SocialNetworks } from '../layouts/socialNetworks';

@@ -1,6 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 
+///ROUTERRR
+import { useHistory } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 export const NavbarPhone = () => {
@@ -24,24 +26,24 @@ export const NavbarPhone = () => {
         </label>
         <nav className="navigation__nav">
           <div className="navigation__nav--phone">
-            <a
-              onClick={() => Navegation("/about")}
+            <Link
+              to="/about"
               className=" navigation__checkbox--options option-1"
             >
               About
-            </a>
-            <a
-              onClick={() => Navegation("/portfolio")}
+            </Link>
+            <Link
+              to="/portfolio"
               className=" navigation__checkbox--options "
             >
               Portfolio
-            </a>
-            <a
-              onClick={() => Navegation("/blog")}
+            </Link>
+            <Link
+            to="/blog"
               className=" navigation__checkbox--options option-3 "
             >
               Blog
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

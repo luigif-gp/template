@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter as  Link } from "react-router-dom";
+
+////ROUTERR
 import { useHistory } from "react-router-dom";
 import { NavbarPhone } from './NavbarPhone';
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 
@@ -25,30 +27,30 @@ export const Navbar = () => {
             />
           </div>
 
-          <a
-            onClick={() => Navegation("/about")}
+          <Link
+            to="/about"
             className="nav-1 navigation__nav--options  text-border-move-nabvar"
           >
             About
-          </a>
-          <a
-            onClick={() => Navegation("/portfolio")}
+          </Link>
+          <Link
+            to="/portfolio"
             className="nav-2 navigation__nav--options  text-border-move-nabvar"
           >
             Portfolio
-          </a>
-          <a
-            onClick={() => Navegation("/blog")}
+          </Link>
+          <Link
+            to="/blog"
             className="nav-3 navigation__nav--options  option-3 text-border-move-nabvar"
           >
             Blog
-          </a>
-          <a
-            onClick={() => Navegation("/contact")}
+          </Link>
+          <Link
+            to="/contact"
             className="navigation__nav--options-especial btn-secondary "
           >
             Let's Talk
-          </a>
+          </Link>
           <NavbarPhone />
         </nav>
       </div>

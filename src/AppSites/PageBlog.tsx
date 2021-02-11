@@ -1,9 +1,11 @@
 import React from 'react';  
+
+//LAYOUTS
 import { Footer } from '../layouts/footer';
 
 //COMPONENTS
 import { Navbar } from '../layouts/Navbar';
-import { Blog } from '../components/comp.myBlog';
+import { Blog } from '../HOME.components/comp.myBlog';
 
 export const PageBlog = () => {
 

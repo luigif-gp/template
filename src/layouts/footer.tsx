@@ -1,7 +1,9 @@
 import React from 'react';
 import { SocialNetworks } from './socialNetworks';
-import { useHistory } from "react-router-dom";
 
+///ROUTER
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 
@@ -31,45 +33,45 @@ export const Footer = () => {
           </div>
           <div className="footer__part-2">
             <p className="footer__part-2--title">Site</p>
-            <a
-              onClick={() => Navegation("/about")}
+            <Link
+              to="/about"
               className="footer__part-2--sites"
             >
               About
-            </a>
-            <a
-              onClick={() => Navegation("/portfolio")}
+            </Link>
+            <Link
+              to="/portfolio"
               className="footer__part-2--sites"
             >
               Portfolio
-            </a>
-            <a
-              onClick={() => Navegation("/blog")}
+            </Link>
+            <Link
+              to="/blog"
               className="footer__part-2--sites"
             >
               Blog
-            </a>
+            </Link>
           </div>
           <div className="footer__part-2">
             <p className="footer__part-2--title">Template</p>
-            <a
-              onClick={() => Navegation("/template-info/changelog")}
+            <Link
+              to="/template-info/changelog"
               className="footer__part-2--sites"
             >
               Changelog
-            </a>
-            <a
-              onClick={() => Navegation("/template-info/licenses")}
+            </Link>
+            <Link
+              to="/template-info/licenses"
               className="footer__part-2--sites"
             >
               Licenses
-            </a>
-            <a
-              onClick={() => Navegation("/template-info/styles-guide")}
+            </Link>
+            <Link
+              to="/template-info/styles-guide"
               className="footer__part-2--sites"
             >
               Style Guide
-            </a>
+            </Link>
           </div>
           <SocialNetworks />
         </div>

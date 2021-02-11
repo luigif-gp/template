@@ -21,6 +21,9 @@
 
         &--phone{
             position: absolute;
+
+            
+
         }
 
         &--logo-box{
@@ -140,7 +143,11 @@
     }
 
         &--options{
+            text-decoration: none;
             visibility: hidden;
+
+            
+           
         }
         
         
@@ -213,6 +220,8 @@
             height: 6rem;
 
             transition: all .3s;
+
+           
 
              @include respond(phone) { // width < 600px
             margin-left: 15rem;

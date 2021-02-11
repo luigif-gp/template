@@ -2,10 +2,10 @@ import React from 'react';
 
 //COMPONENTS
 import { Navbar } from '../layouts/Navbar';
-import { Portfolio } from '../components/comp.portfolio';
+import { Portfolio } from '../HOME.components/comp.portfolio';
 import { DataImg } from '../datas/data.imgPortfolio';
-import { Testimonials } from '../components/comp.testimonials';
-import { Icons } from '../components/comp.icons';
+import { Testimonials } from '../HOME.components/comp.testimonials';
+import { Icons } from '../HOME.components/comp.icons';
 import { Footer } from '../layouts/footer';
 
 

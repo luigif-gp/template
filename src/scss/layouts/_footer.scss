@@ -30,7 +30,7 @@
     grid-template-columns: 49rem 29rem 30rem 20rem;
 
     @include respond(middle-desktop-max) { // width < 1450px
-         grid-template-columns: 29rem 29rem 30rem 50rem;
+         grid-template-columns: 25rem 23rem 30rem 20rem;
      }
 
      @include respond(tab-land) { // width < 1200px
@@ -94,6 +94,7 @@
             color: $color-2;
             transition: all .2s;
             cursor: pointer;
+            text-decoration: none;
 
             @include respond(tab-port) { // width < 900px
                 justify-self: center;
@@ -109,15 +110,29 @@
 
     &__part-3{
         font-size: 1.6rem;
-        margin-top: 0rem;
+        transform: translateY(-20rem);
         margin-right: 20rem;
         width: 50rem;
+
+         @include respond(middle-desktop-max) { // width < 900px
+           transform: translateY(-10rem);
+        
+            }
+
+        @include respond(tab-land) { // width < 1200px
+           transform: translateY(-10rem);
+        
+            }
 
         @include respond(tab-port) { // width < 900px
             width: 40rem;
             margin-right: 0rem;
             justify-self: center;
+            transform: translateY(-15rem);
         
+            }
+            @include respond(phone) { // width < 900px
+                 transform: translateY(-7rem);
             }
         
     }
@@ -133,7 +148,16 @@
     font-weight: 500;
     margin-top: 2rem;
 
-    @include respond(phone-small) { // width < 900px
+    @include respond(tab-port) { // width < 900px
+            margin-top: -12rem;
+        
+            }
+
+     @include respond(phone) { // width < 900px
+            margin-top: -5rem;
+        }
+
+    @include respond(phone-small) { // width < 450px
        font-size: 1.2rem;        
     }
 
