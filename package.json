@@ -10,13 +10,13 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
+    "@types/node-sass": "^4.11.2",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-modal": "^3.12.0",
     "@types/react-responsive": "^8.0.2",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
-    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-elastic-carousel": "^0.11.1",
@@ -57,6 +57,19 @@
     ]
   },
   "devDependencies": {
+    "sass": "^1.44.0",
     "url-loader": "^4.1.1"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferluigi/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferluigi/portfolio/issues"
+  },
+  "homepage": "."
 }

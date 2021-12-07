@@ -22,8 +22,7 @@ export const Header: React.FC<Props> = () => {
           I’m a Designer and web developer from Portugal
         </h1>
         <p className="main-content__normal-text">
-          I have over <strong>1 year</strong> of experience in startups and big
-          companies like Google, Facebook and more.
+          I have over <strong>2 years</strong> of experience building responsive webs and phone apps.
         </p>
         <form className="main-content__form">
           <input

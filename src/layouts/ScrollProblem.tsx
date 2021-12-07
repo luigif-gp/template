@@ -13,8 +13,3 @@ export function ScrollToTop() {
 
   return null;
 }
-
-
-interface Props{
-    children: any
-}
