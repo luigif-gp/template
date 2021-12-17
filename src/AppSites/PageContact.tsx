@@ -23,10 +23,10 @@ export const PageContact = () => {
             Say 👋 and let's talk about our future collaboration
           </h1>
           <p className="contact__container--information-1">
-            <strong>Skype:</strong>tara.portfolio
+            <strong>upWork:</strong>Luigi Garcia
           </p>
           <p className="contact__container--information-2">
-            <strong>Email:</strong>tara.portfollio@gmail.com
+            <strong>Email:</strong>luigifgp@gmail.com
           </p>
           <div className="contact__container--socialn">
             <SocialNetworks />

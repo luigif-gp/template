@@ -49,13 +49,13 @@ return (
         Changelog
       </Link>
       <a
-        href="https://webflow.com/templates/html/tara-portfolio-website-template"
+        href="https://www.upwork.com/freelancers/~011bd204b1d4f93ef2"
         className="navigation__nav--options-especial btn-secondary"
       >
         Buy Now
       </a>
     </nav>
-    <TemplateNavbarPhone/>
+    <TemplateNavbarPhone />
   </div>
 );
 }
