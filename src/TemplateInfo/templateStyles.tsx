@@ -13,7 +13,7 @@ export const StylesGuide = () => {
       <TemplateNavbar />
 
       <h1 className="template__heading big-heading text-center">
-        Tara Style Guide
+        Luigi Style Guide
       </h1>
       <div className="template__styles-container">
         <h3 className="template__styles-container--name ">COLORS</h3>
